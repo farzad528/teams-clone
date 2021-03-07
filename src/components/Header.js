@@ -35,7 +35,7 @@ const HeaderContainer = styled.div`
 `;
 
 const HeaderLeft = styled.div`
-  flex: 0.3;
+  flex: 0.2;
   display: flex;
   align-items: center;
   margin-left: 20px;
@@ -53,7 +53,7 @@ const HeaderApps = styled(Apps)`
 `;
 
 const HeaderSearch = styled.div`
-  flex: 0.4;
+  flex: 0.6;
   opacity: 1;
   border-radius: 6px;
   background-color: #dadae3;
@@ -75,7 +75,7 @@ const HeaderSearch = styled.div`
 
 const HeaderRight = styled.div`
   display: flex;
-  flex: 0.3;
+  flex: 0.2;
   align-items: flex-end;
   margin-left: auto;
 `;
