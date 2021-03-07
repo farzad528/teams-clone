@@ -8,7 +8,7 @@ function Header() {
     <HeaderContainer>
       <HeaderLeft>
         <HeaderApps />
-        <h2> Microsoft Teams</h2>
+        <h3> Microsoft Teams</h3>
       </HeaderLeft>
       <HeaderSearch>
         <Search />
@@ -40,7 +40,8 @@ const HeaderLeft = styled.div`
   align-items: center;
   margin-left: 20px;
 
-  > h1 {
+  > h3 {
+    padding-left: 10px;
   }
 `;
 const HeaderApps = styled(Apps)`
@@ -56,15 +57,15 @@ const HeaderSearch = styled.div`
   opacity: 1;
   border-radius: 6px;
   background-color: #dadae3;
-  text-align: center;
+  text-align: start;
   display: flex;
-  padding: 0 50px;
+  padding: 10px;
   color: gray;
   border: 1px gray solid;
 
   > input {
     background-color: transparent;
-    text-align: center;
+    text-align: start;
     min-width: 30px;
     border: none;
     outline: 0;
