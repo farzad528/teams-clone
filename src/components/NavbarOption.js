@@ -21,6 +21,8 @@ const NavbarOptionContainer = styled.div`
   color: gray;
   :hover {
     opacity: 0.8;
+    background-color: white;
+    width:100%;
   }
 
   &:last-child {
