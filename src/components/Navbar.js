@@ -1,5 +1,6 @@
 import { IconButton } from "@material-ui/core";
 import {
+  Autorenew,
   CallOutlined,
   DateRangeOutlined,
   HelpOutlineOutlined,
@@ -12,16 +13,19 @@ import {
 } from "@material-ui/icons";
 import React, { useState } from "react";
 import styled from "styled-components";
+import NavbarOption from "./NavbarOption";
 
 function Navbar() {
   const [hovered, setHovered] = useState();
   return (
     <NavbarContainer>
-      <NavbarHeader>
-        <NavbarInfo>
-
-        </NavbarInfo>
-      </NavbarHeader>
+      <NavbarOption Icon={NotificationsOutlined} title="Activity" />
+      <NavbarOption Icon={SmsOutlined} title="Chat" />
+      <NavbarOption Icon={PeopleOutlined} title="Teams" />
+      <NavbarOption Icon={DateRangeOutlined} title="Calendar" />
+      <NavbarOption Icon={CallOutlined} title="Calls" />
+      <NavbarOption Icon={InsertDriveFileOutlined} title="Files" />
+      <NavbarOption Icon={HelpOutlineOutlined} title="Help" />
     </NavbarContainer>
   );
 }
@@ -40,11 +44,3 @@ const NavbarContainer = styled.div`
   align-items: center;
   padding: 10px 0;
 `;
-const NavbarHeader= styled.div`
-
-`;
-const NavbarInfo = styled.div`
-
-`;
-
-
