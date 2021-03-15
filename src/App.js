@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import styled from "styled-components";
 import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Header />
         <AppBody>
+        <Navbar />
           <Sidebar />
           <Switch>
             <Route path="/" exact></Route>

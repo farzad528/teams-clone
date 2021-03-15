@@ -9,7 +9,7 @@ function Sidebar() {
       <SidebarHeader>
         <SidebarInfo>
           <h2>Teams</h2>
-          <SidebarFilterList />
+          {/* <SidebarFilterList /> */}
         </SidebarInfo>
       </SidebarHeader>
     </SidebarContainer>
@@ -21,14 +21,14 @@ export default Sidebar;
 const SidebarContainer = styled.div`
   background-color: whitesmoke;
   color: black;
-  flex: 0.3;
+  flex: 0.2;
   border-top: 1px solid #49274b;
-  max-width: 400px;
+  max-width: 325px;
   margin-top: 60px;
 `;
 const SidebarHeader = styled.div`
   display: flex;
-  border-bottom: 1px solid #49274b;
+  border-bottom: 1px solid lightgray;
   padding: 13px;
 `;
 
